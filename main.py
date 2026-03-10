@@ -10,3 +10,5 @@ v3 = Voiture("GHI789", "Ford", "Noir")
 parc.entrerVoiture(v1)
 parc.entrerVoiture(v2)
 parc.entrerVoiture(v3)
+
+parc.sortirVoiture("ABC123")
