@@ -28,3 +28,6 @@ class Parc:
                 return True
         print("Erreur: Voiture non trouvee")
         return False
+    
+    def calculerNbrPlacesLibres(self):
+        return self.capacite - len(self.listeVoitures)
