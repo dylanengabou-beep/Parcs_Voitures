@@ -18,3 +18,13 @@ class Parc:
         else:
             print("Erreur: Parc plein")
             return False
+    
+    def sortirVoiture(self, matricule):
+        for v in self.listeVoitures:
+            if v.matricule == matricule:
+                self.listeVoitures.remove(v)
+                print("Voiture retiree du parc")
+                print("Places libres: " + str(self.calculerNbrPlacesLibres()))
+                return True
+        print("Erreur: Voiture non trouvee")
+        return False
